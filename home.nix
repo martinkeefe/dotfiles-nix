@@ -21,5 +21,22 @@
         fish = {
             enable = true;
         };
+
+        lf = {
+            enable = true;
+
+            settings = {
+                drawbox = true;
+                hidden = true;
+                icons = true;
+                info = ["time" "size"];
+            };
+        };
     };
+
+    # home.sessionVariables = {
+    #     LF_ICONS = "$HOME/dotfiles/lf-icons";
+    # };
+
+    home.file.".config/lf/icons".source = ./lf-icons;
 }
